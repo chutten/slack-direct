@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Slack Direct",
+  "version": "0.1",
+  "description": "Rewrite links within Slack to avoid slack-redir.net",
+  "icons": {
+    "96": "icon-96.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.slack.com/*"],
+      "js": ["slack-direct.js"]
+    }
+  ]
+}
